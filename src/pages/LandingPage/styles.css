@@ -1,0 +1,112 @@
+.landing-page-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landing-apresentation-container {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../assets/images/pablita-finance.png"), 
+                    url("../../assets/images/pablita-522.png");
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  background-position: left, right;
+}
+
+@media (max-width: 1500px) {
+  .landing-apresentation-container {
+    background-image: none;
+  }
+}
+
+.hero-container {
+  height: 168px; /* 224 */
+  width: 450px; /* 600 */
+}
+
+.landing-apresentation-container div {
+  margin-top: 5rem;
+}
+
+.landing-apresentation-container div span {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.blue {
+  color: #234A95;
+  font-weight: 700 !important;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-service {
+  height: 3rem;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 24px;
+  padding: 0 2rem;
+}
+
+.search-button {
+  background-color: #234A95;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fafafa;
+  font-weight: 700;
+  padding: 0 2rem;
+  border-radius: 8px;
+  transition: .2s ease all;
+}
+
+.search-button:hover {
+  box-shadow: 0px 0px 0px 1px black;
+  transform: scale(1.01);
+  transition: .2s ease all;
+}
+
+.concav-container {
+  margin-top: 6rem;
+  height: 50px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 50px 50px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  border-bottom: none;
+}
+
+.landing-services-container {
+  padding: 3rem 0;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-services-content {
+  width: 80%;
+}
+
+.landing-services-title {
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.landing-services-list {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 60px;
+  justify-items: center;
+  max-width: 1440px;
+  margin: 60px auto;
+}
